@@ -18,7 +18,7 @@ const Home = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (query) return navigate(`/search?q=${query}`);
+    if (query) return navigate(`/miniblog/search?q=${query}`);
   };
 
   return (
@@ -44,7 +44,7 @@ const Home = () => {
         {posts && posts.length === 0 && (
           <div className={styles.noposts}>
             <p>Não foram encontrados posts.</p>
-            <Link to={"/posts/create"}>Criar primeiro post</Link>
+            <Link to={"/miniblog/posts/create"}>Criar primeiro post</Link>
           </div>
         )}
       </div>

@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
-      <NavLink to={"/"}>
+      <NavLink to={"/miniblog/"}>
         <span>
           Mini <span>Blog</span>
         </span>
@@ -19,30 +19,30 @@ const Header = () => {
       <nav className={styles.nav_bar}>
         <ul>
           <li>
-            <NavLink to="/">Home</NavLink>
+            <NavLink to="/miniblog/">Home</NavLink>
           </li>
           {!user && (
             <>
               <li>
-                <NavLink to="/login">Entrar</NavLink>
+                <NavLink to="/miniblog/login">Entrar</NavLink>
               </li>
               <li>
-                <NavLink to="/register">Cadastrar</NavLink>
+                <NavLink to="/miniblog/register">Cadastrar</NavLink>
               </li>
             </>
           )}
           {user && (
             <>
               <li>
-                <NavLink to="/dashboard">Dashboard</NavLink>
+                <NavLink to="/miniblog/dashboard">Dashboard</NavLink>
               </li>
               <li>
-                <NavLink to="/posts/create">Novo Post</NavLink>
+                <NavLink to="/miniblog/posts/create">Novo Post</NavLink>
               </li>
             </>
           )}
           <li>
-            <NavLink to="/about">Sobre</NavLink>
+            <NavLink to="/miniblog/about">Sobre</NavLink>
           </li>
           {user && (
             <li>

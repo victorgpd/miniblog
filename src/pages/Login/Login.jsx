@@ -28,7 +28,7 @@ export default function Login() {
     const success = await login(user.email, user.password);
 
     if (success) {
-      navigate("/");
+      navigate("/miniblog/");
     }
   };
 

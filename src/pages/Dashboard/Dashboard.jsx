@@ -42,10 +42,10 @@ const Dashboard = () => {
               </div>
 
               <div className={styles.container_buttons}>
-                <Link to={`/posts/${post.id}`} className={styles.button}>
+                <Link to={`/miniblog/posts/${post.id}`} className={styles.button}>
                   Ler
                 </Link>
-                <button className={styles.button} onClick={() => navigate(`/posts/edit/${post.id}`)}>
+                <button className={styles.button} onClick={() => navigate(`/miniblog/posts/edit/${post.id}`)}>
                   Editar
                 </button>
                 <button className={styles.button_delete} onClick={() => deleteDocument("posts", post.id)}>
@@ -59,7 +59,7 @@ const Dashboard = () => {
           <div className={styles.noPosts}>
             <h2>Você ainda não publicou nenhum post.</h2>
             <p>Vamos começar criando o primeiro?</p>
-            <Link to="/posts/create" className={styles.createButton}>
+            <Link to="/miniblog/posts/create" className={styles.createButton}>
               Criar novo post
             </Link>
           </div>

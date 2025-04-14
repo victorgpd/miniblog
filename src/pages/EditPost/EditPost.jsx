@@ -52,7 +52,7 @@ const EditPost = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     await updateDocument("posts", post.id, postEditado);
-    navigate("/dashboard");
+    navigate("/miniblog/dashboard");
   };
 
   return (
@@ -103,7 +103,7 @@ const EditPost = () => {
           <div className={styles.edit_post_container}>
             <h2 className={styles.edit_post_title}>Acesso Negado</h2>
             <p className={styles.edit_post_text}>Você não tem permissão para editar esse post.</p>
-            <button className={styles.edit_post_button} onClick={() => navigate("/dashboard")}>
+            <button className={styles.edit_post_button} onClick={() => navigate("/miniblog/dashboard")}>
               Voltar para o Dashboard
             </button>
           </div>

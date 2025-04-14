@@ -26,7 +26,7 @@ const Search = () => {
         {posts && posts.length === 0 && (
           <div className={styles.noposts}>
             <p>Não foram encontrado posts com essa tag</p>
-            <Link to={"/"}>Voltar</Link>
+            <Link to={"/miniblog/"}>Voltar</Link>
           </div>
         )}
       </div>

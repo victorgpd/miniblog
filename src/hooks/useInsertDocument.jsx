@@ -50,7 +50,7 @@ export const useInsertDocument = (docCollection) => {
         payload: insertedDocument,
       });
 
-      navigate("/dashboard");
+      navigate("/miniblog/dashboard");
     } catch (error) {
       checkCancelBeforeDispatch({
         type: "ERROR",
