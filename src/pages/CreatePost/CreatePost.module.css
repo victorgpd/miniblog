@@ -1,0 +1,85 @@
+.createPost {
+  width: 100%;
+  height: 100%;
+
+  gap: 15px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.createPostTitle {
+  font-size: 24px;
+  text-align: center;
+  color: #333;
+}
+
+.createPostContainer {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+  gap: 15px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  & form {
+    gap: 15px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+}
+
+.createPostInput {
+  width: 300px;
+  gap: 5px;
+  display: flex;
+  flex-flow: column;
+
+  position: relative;
+}
+
+.createPostLabel {
+  font-size: 14px;
+  color: #555;
+}
+
+.createPostInputField {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.createPostButton {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.createPostButton:hover {
+  background-color: #0056b3;
+}
+
+.createPostButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.createPostError {
+  color: #f00;
+  font-size: 16px;
+  text-align: center;
+}
