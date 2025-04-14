@@ -1,0 +1,45 @@
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1rem;
+  background-color: #f9f9f9;
+  height: 100%;
+}
+
+.about_container {
+  max-width: 800px;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.about_title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.about_text {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.about_button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #5a8dff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.about_button:hover {
+  background-color: #416edc;
+}
