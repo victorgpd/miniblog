@@ -20,7 +20,7 @@ const About = () => {
         <p className={styles.about_text}>Este sistema foi desenvolvido com fins educacionais, como parte dos meus estudos em desenvolvimento web, e também para compor meu portfólio profissional.</p>
         <p className={styles.about_text}>Sinta-se à vontade para explorar e testar o sistema! 😄</p>
 
-        <Link to="/dashboard" className={styles.about_button}>
+        <Link to="/miniblog/dashboard" className={styles.about_button}>
           Ir para o Dashboard
         </Link>
       </div>
