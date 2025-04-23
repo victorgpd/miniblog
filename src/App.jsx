@@ -61,3 +61,26 @@ function App() {
 }
 
 export default App;
+
+// Usar essa forma quando tiver backend proprio
+// import { RouteObject, RouterProvider } from "react-router-dom";
+
+// function App() {
+//   const routes: RouteObject[] = [...homeScreensRoutes, ...searchScreensRoutes, ...loginScreensRoutes, ...productScreensRoutes];
+//   const routesLoggedIn: RouteObject[] = [...dashboardScreensRoutes, ...registeredProductsScreensRoutes, ...insertScreensRoutes, ...searchNewProductsScreensRoutes, ...updateScreensRoutes].map(
+//     (route) => ({
+//       ...route,
+//       loader: verifyLoggedIn,
+//     })
+//   );
+
+//   const router: RemixRouter = createBrowserRouter([...routes, ...routesLoggedIn]);
+
+//   return (
+//     <>
+//       <RouterProvider router={router} />
+//     </>
+//   );
+// }
+
+// export default App;
