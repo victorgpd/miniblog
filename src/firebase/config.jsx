@@ -1,14 +1,22 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
+const apiKey = import.meta.env.VITE_FIREBASE_API_KEY;
+const projectId = import.meta.env.VITE_FIREBASE_PROJECT_ID;
+const storageBucket = import.meta.env.VITE_FIREBASE_STORAGE_BUCKET;
+const messagingSenderId = import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID;
+const appId = import.meta.env.VITE_FIREBASE_APP_ID;
+const measurementId = import.meta.env.VITE_FIREBASE_MEASUREMENT_ID;
+const authDomain = import.meta.env.VITE_FIREBASE_AUTH_DOMAIN;
+
 const firebaseConfig = {
-  apiKey: "AIzaSyDBFrZ06C5A6lm2FItlI_xDLyhwBmhRpwM",
-  authDomain: "miniblog-246df.firebaseapp.com",
-  projectId: "miniblog-246df",
-  storageBucket: "miniblog-246df.firebasestorage.app",
-  messagingSenderId: "557361640775",
-  appId: "1:557361640775:web:d2705a20e6231632a8c862",
-  measurementId: "G-DVFFKCWDZB",
+  apiKey: apiKey,
+  authDomain: authDomain,
+  projectId: projectId,
+  storageBucket: storageBucket,
+  messagingSenderId: messagingSenderId,
+  appId: appId,
+  measurementId: measurementId,
 };
 
 const app = initializeApp(firebaseConfig);
